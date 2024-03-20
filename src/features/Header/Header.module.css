@@ -1,0 +1,12 @@
+.root {
+}
+.firstBlockWrapper {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo {
+  width: 144px;
+  height: 28px;
+}

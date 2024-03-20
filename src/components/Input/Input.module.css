@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  align-items: center;
+}
+.input {
+  border: none;
+  background: #ffffff;
+  border: 1px solid #e2e4f0;
+  padding: 0px 92px 0px 6px;
+  gap: 12px;
+  border-radius: 8px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  color: #071435;
+  font-family: Gotham;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.input::placeholder {
+  color: #828ead;
+}
+.input:focus {
+  border: 2px solid #1551e5;
+  box-shadow: 0px 0px 6px 0px #bac4e0;
+  outline: none;
+}
+.imgBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60px;
+  position: relative;
+  right: 80px;
+}
