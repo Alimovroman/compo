@@ -3,6 +3,7 @@ import logoImg from "../../common/assets/logo.svg";
 import menuImg from "../../common/assets/menu.svg";
 import { Button } from "../../components/Button/Button";
 import { Input } from "../../components/Input/Input";
+import bellImg from "../../common/assets/bell.svg";
 
 export const Header = () => {
   return (
@@ -25,6 +26,12 @@ export const Header = () => {
           height="48px"
           callback={() => "#"}
         />
+        <div>
+          <img src={bellImg} alt="bell" />
+        </div>
+        <div className={style.fontelloWrapper}>
+          <i className="icon-heart" />
+        </div>
       </div>
     </div>
   );

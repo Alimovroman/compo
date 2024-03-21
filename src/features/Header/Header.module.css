@@ -10,3 +10,12 @@
   width: 144px;
   height: 28px;
 }
+.fontelloWrapper {
+  height: 38px;
+}
+.fontelloWrapper i {
+  color: #77829e;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 24px;
+}
