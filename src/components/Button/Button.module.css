@@ -26,6 +26,7 @@
   text-align: center;
   color: #1551e5;
   border: none;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
