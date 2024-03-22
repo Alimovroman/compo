@@ -4,18 +4,81 @@
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .logo {
   width: 144px;
   height: 28px;
 }
+.bellWrapper {
+  padding-right: 10px;
+  margin-left: -45px;
+}
 .fontelloWrapper {
   height: 38px;
+  border-left: 1px solid #e2e4f0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .fontelloWrapper i {
   color: #77829e;
   gap: 0px;
   opacity: 0px;
   font-size: 24px;
+}
+.burgerMenu {
+  font-family: Gotham Pro;
+  width: 169px px;
+  height: 32px px;
+  gap: 16px;
+  opacity: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #071435;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.burgerMenuBtn {
+  border: none;
+  background-color: inherit;
+}
+.secondLine {
+  height: 54px;
+  gap: 16px;
+  opacity: 0px;
+  border-top: 1px solid #e1e5eb;
+  border-bottom: 1px solid #e1e5eb;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigationWrapper {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  margin-right: 15px;
+  color: #071435;
+  font-family: Gotham Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.ohterLink {
+  font-family: Gotham Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #1551e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
 }

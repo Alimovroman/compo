@@ -2,6 +2,7 @@ import { FC } from "react";
 import style from "./Button.module.css";
 
 type Props = {
+  type: "default" | "grey";
   title: string;
   titleImg?: string;
   width: string;
@@ -11,6 +12,7 @@ type Props = {
 
 export const Button: FC<Props> = ({
   title,
+  type,
   titleImg,
   width,
   height,
@@ -23,7 +25,7 @@ export const Button: FC<Props> = ({
   return (
     <div>
       <button
-        className={style.btn}
+        className={type === "default" ? style.btnDefault : style.btnGrey}
         style={{ width, height }}
         onClick={onClickHandler}
       >
