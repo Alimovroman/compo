@@ -3,7 +3,7 @@ import style from "./Button.module.css";
 
 type Props = {
   type: "default" | "grey";
-  title: string;
+  title?: string;
   titleImg?: string;
   width: string;
   height: string;
@@ -30,7 +30,7 @@ export const Button: FC<Props> = ({
         onClick={onClickHandler}
       >
         {titleImg && <img src={titleImg} alt={"img"} />}
-        {title}
+        {title && title}
       </button>
     </div>
   );

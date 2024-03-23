@@ -5,6 +5,7 @@
   border-top: 1px solid #e2e4f0;
   border-bottom: 1px solid #e2e4f0;
   height: 110px;
+  margin-bottom: 30px;
 }
 .contactsBlock {
   display: flex;

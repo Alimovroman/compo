@@ -1,3 +1,7 @@
+.productsBlock {
+  display: flex;
+  justify-content: space-between;
+}
 .root {
   width: 370px;
   display: flex;
