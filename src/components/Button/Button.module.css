@@ -12,6 +12,7 @@
   line-height: 16px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .btnDefault:hover {
   background: #316cff;

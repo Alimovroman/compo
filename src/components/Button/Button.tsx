@@ -4,6 +4,7 @@ import style from "./Button.module.css";
 type Props = {
   type: "default" | "grey";
   title?: string;
+  fontello?: string;
   titleImg?: string;
   width: string;
   height: string;
@@ -12,6 +13,7 @@ type Props = {
 
 export const Button: FC<Props> = ({
   title,
+  fontello,
   type,
   titleImg,
   width,
@@ -29,6 +31,7 @@ export const Button: FC<Props> = ({
         style={{ width, height }}
         onClick={onClickHandler}
       >
+        {fontello && <i className={`${fontello}`} />}
         {titleImg && <img src={titleImg} alt={"img"} />}
         {title && title}
       </button>

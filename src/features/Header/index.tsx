@@ -38,7 +38,7 @@ export const Header = () => {
           <i className="icon-heart" />
         </div>
         <Button
-          title="144 255р"
+          title="144 255₽"
           type="grey"
           height="48px"
           width="148px"

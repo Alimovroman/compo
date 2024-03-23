@@ -6,6 +6,7 @@ import sneakers3 from "../../../common/assets/catalog/sneakers-3.svg";
 import sneakers4 from "../../../common/assets/catalog/sneakers-4.svg";
 import sneakers5 from "../../../common/assets/catalog/sneakers-5.svg";
 import { useState } from "react";
+import { ProductInfo } from "./ProductInfo/ProductInfo";
 
 export const ProductItem = () => {
   const [sliderImg, setSliderImg] = useState<SliderImg[]>([
@@ -34,8 +35,9 @@ export const ProductItem = () => {
         </div>
         <div className={style.title}>Кроссовки мужские Skechers Sunny Dale</div>
       </div>
-      <div className={style.ItemBLock}>
+      <div className={style.itemBLock}>
         <Slider sliderImg={sliderImg} />
+        <ProductInfo />
       </div>
     </div>
   );

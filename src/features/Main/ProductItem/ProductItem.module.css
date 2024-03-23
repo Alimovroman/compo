@@ -26,3 +26,8 @@
   line-height: 32px;
   margin-top: 20px;
 }
+.itemBLock {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
