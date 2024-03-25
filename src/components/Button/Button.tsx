@@ -3,6 +3,7 @@ import style from "./Button.module.css";
 
 type Props = {
   type: "default" | "grey";
+  child: React.ReactNode;
   title?: string;
   fontello?: string;
   titleImg?: string;
@@ -14,6 +15,7 @@ type Props = {
 export const Button: FC<Props> = ({
   title,
   fontello,
+  child,
   type,
   titleImg,
   width,
@@ -31,9 +33,10 @@ export const Button: FC<Props> = ({
         style={{ width, height }}
         onClick={onClickHandler}
       >
-        {fontello && <i className={`${fontello}`} />}
+        {child}
+        {/* {fontello && <i className={`${fontello}`} />}
         {titleImg && <img src={titleImg} alt={"img"} />}
-        {title && title}
+        {title && title} */}
       </button>
     </div>
   );

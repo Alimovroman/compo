@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Gotham";
+  src: local("Gotham"),
+    url(./common/fonts/Gotham/gotham_medium.otf) format("opentype");
+}
+
+/* @font-face {
+    font-family: 'Lato';
+    font-weight: 900;
+    src: local('Lato'), url(./fonts/Lato-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 900;
+    src: local('Lato'), url(./fonts/Lato-Black.otf) format('opentype');
+} */
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro"),
+    url(./common/fonts/GothamPro/GothamPro-Medium.woff2) format("woff2");
+}

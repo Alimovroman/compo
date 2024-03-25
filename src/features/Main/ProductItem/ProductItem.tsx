@@ -24,13 +24,19 @@ export const ProductItem = () => {
             <a href="#">Каталог</a>
           </div>
           <div className={style.pathItem}>
-            <a href="#">/ &#160; Обувь</a>
+            <a href="#">
+              <span className={style.slash}>/</span> Обувь
+            </a>
           </div>
           <div className={style.pathItem}>
-            <a href="#">/ &#160; Кроссовки</a>
+            <a href="#">
+              <span className={style.slash}>/</span> Кроссовки
+            </a>
           </div>
           <div className={style.pathItem}>
-            <a href="#">/ &#160; Беговые</a>
+            <a href="#">
+              <span className={style.slash}>/</span> Беговые
+            </a>
           </div>
         </div>
         <div className={style.title}>Кроссовки мужские Skechers Sunny Dale</div>

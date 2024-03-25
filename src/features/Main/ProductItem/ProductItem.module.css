@@ -1,3 +1,7 @@
+.root {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -17,6 +21,9 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+}
+.slash {
+  margin-right: 7px;
 }
 .title {
   color: #071435;
