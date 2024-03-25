@@ -22,13 +22,9 @@ export const Contacts = () => {
         <div className={style.title}>Вакансии</div>
         <div className={style.title}>Блог</div>
         <div className={style.title}>Акции</div>
-        <Button
-          title="Предложить идею"
-          type="grey"
-          width="179px"
-          height="48px"
-          callback={() => "#"}
-        />
+        <Button type="grey" width="179px" height="48px" callback={() => "#"}>
+          Предложить идею
+        </Button>
       </div>
     </div>
   );

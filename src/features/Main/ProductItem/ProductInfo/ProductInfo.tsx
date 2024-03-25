@@ -1,7 +1,7 @@
 import { Button } from "../../../../components/Button/Button";
 import style from "./ProductInfo.module.css";
 import { CustomizedSwitch } from "./Switch";
-import cartImg from "../../../../common/assets/cart.svg";
+import cartImg from "../../../../common/assets/cart-white.svg";
 
 type Specifications = { name: string; info: string };
 
@@ -46,19 +46,16 @@ export const ProductInfo = () => {
           </div>
           <div className={style.btnWrapper}>
             <Button
-              title="В корзину"
               callback={() => "#"}
               type="default"
               width="284px"
               height="56px"
-            />
-            <Button
-              fontello="icon-heart"
-              type="grey"
-              callback={() => "#"}
-              width="72px"
-              height="56px"
-            />
+            >
+              <img src={cartImg} alt="cart" /> В корзину
+            </Button>
+            <Button type="grey" callback={() => "#"} width="72px" height="56px">
+              <i className="icon-heart" />
+            </Button>
           </div>
         </div>
         <div className={style.specificationsWrapper}>

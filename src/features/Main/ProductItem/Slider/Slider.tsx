@@ -65,13 +65,9 @@ export const Slider: FC<Props> = ({ sliderImg }) => {
         <img src={activeImg} alt="img" className={style.mainImg} />
       </div>
       <div className={style.sliderMenu}>
-        <Button
-          titleImg={arrowLeftImg}
-          width="38px"
-          height="64px"
-          type="grey"
-          callback={onDecrement}
-        />
+        <Button width="38px" height="64px" type="grey" callback={onDecrement}>
+          <img src={arrowLeftImg} alt="arrow" />
+        </Button>
         <div className={style.images}>
           {imagesMenu.map((e, i) => (
             <div key={e.id} onClick={() => onChengeImg(e.id)}>
@@ -79,13 +75,9 @@ export const Slider: FC<Props> = ({ sliderImg }) => {
             </div>
           ))}
         </div>
-        <Button
-          titleImg={arrowRightImg}
-          width="38px"
-          height="64px"
-          type="grey"
-          callback={onIncrement}
-        />
+        <Button width="38px" height="64px" type="grey" callback={onIncrement}>
+          <img src={arrowRightImg} alt="arrow" />
+        </Button>
       </div>
     </div>
   );

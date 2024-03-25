@@ -16,14 +16,9 @@ export const Header = () => {
         <div>
           <img src={logoImg} alt="logo" className={style.logo} />
         </div>
-        <Button
-          title="Меню"
-          type="default"
-          titleImg={menuImg}
-          width="127px"
-          height="48px"
-          callback={() => "#"}
-        />
+        <Button type="default" width="127px" height="48px" callback={() => "#"}>
+          <img src={menuImg} alt="menu" /> Меню
+        </Button>
         <Input
           type="text"
           placeholder="Название запроса"
@@ -37,14 +32,9 @@ export const Header = () => {
         <div className={style.fontelloWrapper}>
           <i className="icon-heart" />
         </div>
-        <Button
-          title="144 255₽"
-          type="grey"
-          height="48px"
-          width="148px"
-          titleImg={cartImg}
-          callback={() => "#"}
-        />
+        <Button type="grey" height="48px" width="148px" callback={() => "#"}>
+          <img src={cartImg} alt="cart" /> 144 255₽
+        </Button>
         <div className={style.burgerMenu}>
           <div>
             <img src={avatarImg} alt="avatar" />
@@ -65,14 +55,9 @@ export const Header = () => {
           <div className={style.navigation}>Обращения</div>
         </div>
         <div className={style.ohterLink}>
-          <Button
-            title="Ваш менеджер"
-            titleImg={messengerImg}
-            callback={() => "#"}
-            type="grey"
-            height="32px"
-            width="152px"
-          />
+          <Button callback={() => "#"} type="grey" height="32px" width="152px">
+            <img src={messengerImg} alt="messenger" /> Ваш менеджер
+          </Button>
           <div className={style.discount}>% &#160;&#160; Aкции</div>
           <div>Blog</div>
         </div>
