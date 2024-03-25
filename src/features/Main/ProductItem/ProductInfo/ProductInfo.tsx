@@ -3,10 +3,22 @@ import style from "./ProductInfo.module.css";
 import { CustomizedSwitch } from "./Switch";
 import cartImg from "../../../../common/assets/cart.svg";
 
+type Specifications = { name: string; info: string };
+
 export const ProductInfo = () => {
+  const specifications: Specifications[] = [
+    { name: "ELC00696", info: "Код поставщика" },
+    { name: "ELC00696", info: "Код РАЭК" },
+    { name: "Electric used", info: "Бренд" },
+    { name: "ELC0200000696", info: "Код производителя " },
+    { name: "ELC0200000696", info: "Артикул" },
+    { name: "ELC00696", info: "Код ЕТМ" },
+    { name: "ELC00696", info: "Серия" },
+  ];
+
   return (
     <div className={style.root}>
-      <div>
+      <div className={style.aboutItem}>
         <div className={style.buying}>
           <div className={style.withoutDiscount}>
             166 534.00 цена без скидки
@@ -47,6 +59,17 @@ export const ProductInfo = () => {
               width="72px"
               height="56px"
             />
+          </div>
+        </div>
+        <div className={style.specificationsWrapper}>
+          <div className={style.headerSpecifications}>Характеристики</div>
+          <div className={style.specifications}>
+            {specifications.map((e, i) => (
+              <div className={style.itemSpecifications} key={i}>
+                <div className={style.title}>{e.name}</div>
+                <div className={style.text}>{e.info}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

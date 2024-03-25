@@ -2,6 +2,10 @@
   margin-top: 40px;
   margin-left: 20px;
 }
+.aboutItem {
+  display: flex;
+  align-items: center;
+}
 .buying {
   width: 372px;
 }
@@ -92,6 +96,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.specificationsWrapper {
+  border-left: 1px solid #e2e4f0;
+  width: 636px;
+  height: 294px;
+  gap: 32px;
+  opacity: 0px;
+  margin-left: 40px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.headerSpecifications {
+  color: #071435;
+  font-family: Gotham;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.specifications {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 248px;
+}
+.itemSpecifications {
+  margin-top: 10px;
 }
 .descriptionHeader {
   color: #071435;
