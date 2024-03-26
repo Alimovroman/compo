@@ -1,21 +1,21 @@
-import { Products } from "./Products";
+import { Product, Products } from "./Products";
 import style from "./Products.module.css";
 
 export const ProductsBlock = () => {
-  const productsWomen: Products[] = [
+  const productsWomen: Product[] = [
     { name: "Одежда", path: "#" },
     { name: "Обувь", path: "#" },
     { name: "Аксессуары", path: "#" },
     { name: "Белье", path: "#" },
     { name: "Bra fitting", path: "#" },
   ];
-  const productsMen: Products[] = [
+  const productsMen: Product[] = [
     { name: "Одежда", path: "#" },
     { name: "Обувь", path: "#" },
     { name: "Аксессуары", path: "#" },
     { name: "Белье", path: "#" },
   ];
-  const productsKids: Products[] = [
+  const productsKids: Product[] = [
     { name: "Одежда", path: "#" },
     { name: "Обувь", path: "#" },
     { name: "Аксессуары", path: "#" },
@@ -23,7 +23,7 @@ export const ProductsBlock = () => {
     { name: "Игрушки", path: "#" },
     { name: "Малыши", path: "#" },
   ];
-  const productsSports: Products[] = [
+  const productsSports: Product[] = [
     { name: "Велосипет", path: "#" },
     { name: "Туризм", path: "#" },
     { name: "Тренажеры и фитнес", path: "#" },
