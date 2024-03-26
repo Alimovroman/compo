@@ -1,14 +1,14 @@
 import { FC } from "react";
 import style from "./Products.module.css";
 
-export type Products = {
+export type Product = {
   name: string;
   path: string;
 };
 
 type Props = {
   title: string;
-  products: Products[];
+  products: Product[];
 };
 
 export const Products: FC<Props> = ({ title, products }) => {
