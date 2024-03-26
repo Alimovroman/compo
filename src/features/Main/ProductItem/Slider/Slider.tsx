@@ -1,9 +1,8 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 import style from "./Slider.module.css";
 import { Button } from "../../../../components/Button/Button";
 import arrowLeftImg from "../../../../common/assets/arrow-left.svg";
 import arrowRightImg from "../../../../common/assets/arrow-right.svg";
-import { log } from "console";
 
 export type SliderImg = {
   id: number;
